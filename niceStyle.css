@@ -1,16 +1,52 @@
 body {background-color: whitesmoke;}
 h1   {
-    color: black; padding-left: 30px; padding-top: 10px; font-size: 300%; 
+    color: black; text-align: center; padding-top: 50px; font-size: 300%; 
     font-family: Times, 'Times New Roman', serif;
     background-image: url('');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     }
-h2   {color: black; padding-left: 30px; padding-top: 10px; font-size: 160%;}
-p    {color: black; padding-left: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-h3   {color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 60%}
-.media   {color: black; padding-left: 30px; padding-bottom: 100px;}
+h2   {color: black; text-align: center; padding-top: 10px; font-size: 160%;}
+p    {color: black; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+h3   {color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50%}
+
+a.one:link {text-decoration: underline; color: black}
+a.one:visited {  text-decoration: underline; color: black}
+a.one:hover {  text-decoration: underline;}
+a.one:active {  text-decoration: underline;}
+
+a.two:link {text-decoration: underline; color: black}
+a.two:hover {  text-decoration: underline;}
+a.two:active {  text-decoration: underline;}
+
+.header {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 30px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+iframe[src*="docs.google.com"],
+iframe[src*="google.com/maps"],
+iframe[src*="youtube.com"]{
+    width: 75%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+.iframe-container {
+    display: flex; justify-content: center;
+    padding-bottom: 5rem;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -21,6 +57,7 @@ h3   {color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     text-align: center;
     min-height: 50px;
   }
+
 
 .wrapper {
     width: 90%;
@@ -38,7 +75,7 @@ h3   {color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     justify-content: center;
 }
 .front .inner hide {
-    color: rgbaf225, 225, 225, 0;
+    color: white;
     font-family: Times, 'Times New Roman', serif;
     font-weight: 300;
 }
